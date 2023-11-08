@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/project/cool.css">
+    <script src="/project/cool.js" defer></script>
+    <title>REDACTR - SCRAMBLE SOME WORDS FROM A BODY OF TEXT CONTENT</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Redaction App</h1>
+        <div class="litte-container">
+            <input type="text" id="input1" placeholder="Enter text for Input 1">
+            <br>
+            <input type="text" id="input2" placeholder="Enter text for Input 2">
+            <br>
+            <p id="output"></p>
+        </div>
+
+        <div class="second-container">
+            <button onclick="compareAndReplace()">Redact Now</button>
+            <select id="mySelect">
+                <option value="*">*</option>
+                <option value="">&</option>
+                <option value="$">$</option>
+                <option value="@">@</option>
+                <option value="-">-</option>
+                <option value="_">_</option>
+                <option value="?">?</option>
+                <option value="#">#</option>
+                <option value=".">.</option>
+            </select>
+        </div>
+
+        <p id="second-output"></p>
+    </div>
+</body>
+
+</html>
+
+
